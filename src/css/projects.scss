@@ -1,0 +1,148 @@
+.projectContainer {
+    padding: 10vh 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    // background-color: rgb(0, 0, 0);
+    // color: rgb(255, 255, 255);
+
+    .pageContentDiv {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .projectDescDiv {
+            // background-color: rgb(255, 0, 0);
+            // background-color: rgb(0, 0, 0, 0.1);
+            width: 45%;
+            border-radius: 10%;
+            height: 72vh;
+            margin: 0 1rem;
+            margin-right: 6rem;
+            overflow: hidden;
+
+            .animation-for-projects {
+                // display: none;
+                position: absolute;
+                width: 42%;
+                border-radius: 2%;
+                height: 72vh;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .titleContainer {
+        // background-color: rgba(0, 255, 255, 0.157);
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        padding: 2rem 4.5rem;
+
+        .tabNames {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-right: 1rem;
+            align-items: center;
+            display: flex;
+        }
+
+        .HrlineDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 75%;
+
+            .titleHrLine1 {
+                background-color: rgb(254, 137, 205);
+                height: 2px;
+                margin: 0.25rem;
+                width: 60%;
+                margin-left: 40%;
+            }
+            .titleHrLine2 {
+                background-color: rgb(137, 205, 254);
+                height: 2px;
+                margin: 0.25rem;
+                width: 60%;
+            }
+        }
+    }
+
+    .gridboxForProjects {
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        width: 50vw;
+        // display: grid;
+        // grid-template-columns: 15rem 15rem 15rem;
+        // grid-template-rows: 15rem 15rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        .projectBox {
+            color: black;
+            // color: white;
+            width: 80%;
+            height: 7rem;
+            border-radius: 2rem;
+            padding: 1rem 2rem;
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+            .rightArrow {
+                width: 1.25rem;
+                height: 1.25rem;
+            }
+
+            .project-title {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .project-skills {
+                display: flex;
+                // flex-wrap: wrap;
+
+                .skill-span {
+                    padding: 0.3rem;
+                    margin: 0.25rem 0.4rem;
+                    margin-left: 0;
+                    width: 5rem;
+                    text-align: center;
+                    font-size: 0.7rem;
+                    border: 0.1rem solid black;
+                    background-color: rgb(255, 255, 255, 0.4);
+                    border-radius: 0.3rem;
+                }
+            }
+        }
+
+        .pink {
+            background-color: rgb(254, 137, 205);
+        }
+
+        .neon {
+            background-color: rgb(137, 254, 205);
+        }
+
+        .yellow {
+            background-color: rgb(254, 205, 137);
+        }
+        .green {
+            background-color: rgb(205, 254, 137);
+        }
+        .blue {
+            background-color: rgb(137, 205, 254);
+        }
+        .purple {
+            background-color: rgb(205, 137, 254);
+        }
+    }
+}

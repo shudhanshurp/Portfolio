@@ -1,0 +1,125 @@
+.navbar {
+    display: flex;
+
+    background-color: black;
+    // background: transparent;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    font-size: 1.15rem;
+    height: 10vh;
+    z-index: 1000 !important;
+
+    .leftLogo {
+        .logo {
+            filter: invert(1);
+            width: 15vw;
+            margin: 0.75rem 0;
+        }
+    }
+
+    .rightNav {
+        margin: 1rem 3rem;
+        display: flex;
+        flex-direction: row;
+
+        align-items: center; // align the items vertically to center
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            flex-direction: row;
+            list-style-type: none; // remove the default bullet points
+        }
+
+        li {
+            margin: 0rem 1rem; // add some spacing between the items
+        }
+
+        a {
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 0.875em;
+
+            .interests:hover {
+                color: rgb(137, 205, 254);
+            }
+
+            .projects:hover {
+                color: rgb(137, 205, 254);
+            }
+
+            .skills:hover {
+                color: rgb(137, 205, 254);
+            }
+
+            .background:hover {
+                color: rgb(137, 205, 254);
+            }
+
+            .contact:hover {
+                color: #89bbfe;
+            }
+            .resume:hover {
+                color: #89bbfe;
+            }
+
+            .nums {
+                color: #89bbfe;
+            }
+        }
+    }
+
+    .animate__animated.animate__fadeInDown {
+        --animate-delay: 10s;
+    }
+
+    .pyramid {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+    .toggleBtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        height: -webkit-max-content;
+        height: max-content;
+        padding: 15px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+
+        .leftLogo {
+            margin: 0;
+            font-size: 30px;
+            // margin-left: 5px;
+        }
+
+        .toggleBtn {
+            background-color: transparent;
+            border: 0;
+            display: block;
+        }
+        .rightNav {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .navbar {
+        width: 100vw;
+    }
+}

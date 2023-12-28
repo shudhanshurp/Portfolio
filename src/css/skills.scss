@@ -1,0 +1,243 @@
+.skillsSection {
+    padding: 10vh 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+    .scContainer {
+        display: flex;
+        flex-direction: column;
+        width: 99vw;
+        overflow: hidden;
+
+        .titleContainer {
+            // background-color: rgba(0, 255, 255, 0.157);
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            padding: 2rem 4.5rem;
+            flex-direction: column;
+
+            .tabNames {
+                font-size: 2rem;
+                font-weight: 600;
+                letter-spacing: 2px;
+                margin-left: 1rem;
+                align-items: center;
+                display: flex;
+            }
+
+            .HrlineDiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                flex-direction: column-reverse;
+                width: 75%;
+
+                .titleHrLine1 {
+                    background-color: rgb(254, 205, 137);
+                    height: 2px;
+                    margin: 0.25rem;
+                    width: 60%;
+                    margin-left: 40%;
+                }
+                .titleHrLine2 {
+                    background-color: rgb(205, 137, 254);
+                    height: 2px;
+                    margin: 0.25rem;
+                    width: 60%;
+                }
+            }
+        }
+
+        .skillContainer {
+            padding: 2.5rem 0;
+            .hex-layer-6 {
+                overflow: hidden;
+                display: grid;
+                grid-template-columns: repeat(10, 0fr);
+                margin: 0;
+                justify-content: center;
+                align-content: center;
+
+                .hex {
+                    margin: 0 0.5rem;
+                    height: 11rem;
+                    width: 11rem;
+                    align-self: center;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    // -webkit-clip-path: polygon(
+                    //     50% 0%,
+                    //     95% 25%,
+                    //     95% 75%,
+                    //     50% 100%,
+                    //     5% 75%,
+                    //     5% 25%
+                    // );
+                    // clip-path: polygon(
+                    //     50% 0%,
+                    //     95% 25%,
+                    //     95% 75%,
+                    //     50% 100%,
+                    //     5% 75%,
+                    //     5% 25%
+                    // );
+                    transition: transform 0.3s, height 0.3s, width 0.3s,
+                        background 0.3s;
+
+                    .logo_img {
+                        width: 7rem;
+                    }
+
+                    .keras {
+                        width: 5.5rem;
+                    }
+                }
+
+                .hex:hover {
+                    width: 12rem;
+                    height: 12rem;
+                    background: white;
+                }
+
+                .empty-1 {
+                    opacity: 60%;
+                }
+
+                .empty-3 {
+                    opacity: 20%;
+                }
+            }
+            .hex-layer-5 {
+                overflow: hidden;
+                display: grid;
+                justify-content: center;
+
+                align-content: center;
+                grid-template-columns: repeat(11, 0fr);
+
+                .hex {
+                    height: 11rem;
+                    width: 11rem;
+                    margin: 0 0.5rem;
+                    align-self: center;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    // -webkit-clip-path: polygon(
+                    //     50% 0%,
+                    //     95% 25%,
+                    //     95% 75%,
+                    //     50% 100%,
+                    //     5% 75%,
+                    //     5% 25%
+                    // );
+                    // clip-path: polygon(
+                    //     50% 0%,
+                    //     95% 25%,
+                    //     95% 75%,
+                    //     50% 100%,
+                    //     5% 75%,
+                    //     5% 25%
+                    // );
+
+                    transition: transform 0.3s, height 0.3s, width 0.3s,
+                        background 0.3s;
+
+                    .logo_img {
+                        width: 7rem;
+                    }
+
+                    .keras {
+                        width: 5.5rem;
+                    }
+                }
+
+                .hex:hover {
+                    width: 12rem;
+                    height: 12rem;
+                    background: white;
+                }
+
+                .empty-2 {
+                    opacity: 80%;
+                }
+
+                .empty-4 {
+                    opacity: 40%;
+                }
+                .empty-6 {
+                    opacity: 5%;
+                }
+            }
+
+            .hex-layer-4 {
+                display: grid;
+                overflow: hidden;
+                justify-content: center;
+                align-content: center;
+                grid-template-columns: repeat(10, 0fr);
+
+                .hex {
+                    height: 11rem;
+                    width: 11rem;
+                    margin: 0 0.5rem;
+                    align-self: center;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+
+                    // -webkit-clip-path: polygon(
+                    //     50% 0%,
+                    //     95% 25%,
+                    //     95% 75%,
+                    //     50% 100%,
+                    //     5% 75%,
+                    //     5% 25%
+                    // );
+                    // clip-path: polygon(
+                    //     50% 0%,
+                    //     95% 25%,
+                    //     95% 75%,
+                    //     50% 100%,
+                    //     5% 75%,
+                    //     5% 25%
+                    // );
+                    transition: transform 0.3s, height 0.3s, width 0.3s,
+                        background 0.3s;
+
+                    .logo_img {
+                        width: 7rem;
+                    }
+                }
+
+                .hex:hover {
+                    width: 12rem;
+                    height: 12rem;
+                    background: white;
+                }
+
+                .empty-0 {
+                    opacity: 100%;
+                }
+
+                .empty-1 {
+                    opacity: 60%;
+                }
+
+                .empty-3 {
+                    opacity: 20%;
+                }
+            }
+        }
+    }
+}

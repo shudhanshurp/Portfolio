@@ -1,0 +1,185 @@
+.contactSection {
+    height: 90vh;
+    color: white;
+    // width: 100%;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+
+    .titleContainer {
+        // background-color: rgba(0, 255, 255, 0.157);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 2rem 4.5rem;
+        flex-direction: column;
+
+        .tabNames {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-left: 1rem;
+            align-items: center;
+            display: flex;
+        }
+
+        .HrlineDiv {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-direction: column-reverse;
+            width: 50rem;
+
+            .titleHrLine2 {
+                background-color: rgb(255, 255, 255);
+                height: 2px;
+                margin: 1rem;
+                width: 100%;
+            }
+        }
+    }
+
+    .socialContainer {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin: 1rem;
+
+        .socialIcon {
+            border-radius: 10%;
+            padding: 0.75rem;
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+
+            .socialIconItem {
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+        .instagram:hover {
+            background: #f09433;
+            background: -moz-linear-gradient(
+                45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%
+            );
+            background: -webkit-linear-gradient(
+                45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%
+            );
+            background: linear-gradient(
+                45deg,
+                #f09433 0%,
+                #e6683c 25%,
+                #dc2743 50%,
+                #cc2366 75%,
+                #bc1888 100%
+            );
+
+            transition: all 0.4s ease-in-out;
+            transition-delay: 75ms;
+        }
+
+        .github:hover {
+            background-color: #242c34;
+        }
+
+        .linkedin:hover {
+            background-color: #0a66c2;
+        }
+
+        .twitter:hover {
+            background-color: #14a4ed;
+        }
+
+        .leetcode:hover {
+            background-color: #e2a148;
+        }
+
+        .hackerrank:hover {
+            background-color: #00e861;
+        }
+    }
+
+    .Container-div {
+        perspective: 250px;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        .container {
+            transform: rotateX(20deg);
+            transform-origin: bottom;
+            filter: contrast(6);
+            --mask: linear-gradient(rgba(0, 0, 0, 0.45), red);
+            width: 160vw;
+            height: 50%;
+            left: -30rem;
+            position: absolute;
+            bottom: 28.75rem;
+            background: #000;
+        }
+
+        .container::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: radial-gradient(#fff, transparent) 0 0/1em 1em space;
+            -webkit-mask: var(--mask);
+            mask: var(--mask);
+            content: "";
+        }
+    }
+
+    .sendEmail {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 3rem;
+
+        .someEmailIntro {
+            width: 50rem;
+            word-wrap: break-word;
+            text-align: center;
+        }
+
+        .sendEmailBtn {
+            height: 3rem;
+            margin-top: 3rem;
+            border: 1px solid white;
+            padding: 0 2rem;
+            background: transparent;
+        }
+
+        .sendEmailBtn:hover {
+            border: none;
+            background-color: #e74b3e;
+        }
+
+        .signContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 14rem;
+            z-index: 2;
+        }
+
+        .logo {
+            filter: invert(1);
+            width: 15vw;
+            margin: 0.75rem 0;
+        }
+    }
+}
