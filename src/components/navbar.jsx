@@ -76,16 +76,6 @@ const Navbar = () => {
                     </li>
                     <li
                         className="animate__animated animate__fadeInDown"
-                        style={{ animationDelay: "200ms" }}
-                    >
-                        <a href="#interests" onClick={handleContactClick}>
-                            <span className="interests" href="/">
-                                Interests
-                            </span>
-                        </a>
-                    </li>
-                    <li
-                        className="animate__animated animate__fadeInDown"
                         style={{ animationDelay: "250ms" }}
                     >
                         <a href="#contact" onClick={handleContactClick}>

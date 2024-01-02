@@ -9,9 +9,9 @@ import {
     SiHackerrank,
 } from "react-icons/si";
 const ContactSection = () => {
-    const handleButtonCLick = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+    // const handleButtonCLick = () => {
+    //     window.scrollTo({ top: 0, behavior: "smooth" });
+    // };
 
     return (
         <div className="contactSection" id="contact">

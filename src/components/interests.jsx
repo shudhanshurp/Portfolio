@@ -6,9 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
-import "swiper/css/pagination";
+import "swiper/css/navigation";
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 import education from "../assets/education_logo.png";
 import bookstack from "../assets/bookstack_logo.png";
@@ -27,6 +27,7 @@ const InterestSection = () => {
                     <span className="tabNames ">Learn more about me</span>
                     <div className="HrlineDiv">
                         <div className="titleHrLine2"></div>
+                        <div className="titleHrLine1"></div>
                     </div>
                 </div>
                 <div className="IconContainer ">
@@ -45,7 +46,7 @@ const InterestSection = () => {
                         <div className="titleforDiv">Education</div>
                     </div>
                     <div
-                        className="ImageContainer HoverGreen"
+                        className="ImageContainer HoverPink"
                         onClick={() => handleSectionClick("workEx")}
                     >
                         <div className="ImageResize ">
@@ -151,13 +152,17 @@ const InterestSection = () => {
                     )}
                     {activeSection == "book" ? (
                         <div className="AllDetails Bookshelf">
+                            <div className="swiper-button-prev"></div>
                             <Swiper
                                 slidesPerView={5}
                                 centeredSlides={false}
-                                spaceBetween={20}
+                                spaceBetween={5}
                                 pagination={false}
-                                navigation={true}
-                                modules={[Pagination, Navigation]}
+                                navigation={{
+                                    nextEl: ".swiper-button-next",
+                                    prevEl: ".swiper-button-prev",
+                                }}
+                                modules={[Navigation]}
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
@@ -227,6 +232,7 @@ const InterestSection = () => {
                                     />
                                 </SwiperSlide>
                             </Swiper>
+                            <div className="swiper-button-next"></div>
                         </div>
                     ) : (
                         <div></div>

@@ -2,16 +2,189 @@
     padding: 10vh 0;
     height: 100vh;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    // background-color: rgb(0, 0, 0);
-    // color: rgb(255, 255, 255);
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+
+    .animation-for-projects {
+        // display: none;
+        position: absolute;
+        width: 100%;
+        border-radius: 2%;
+        height: 72vh;
+        bottom: 0;
+        z-index: 1;
+        opacity: 0.6;
+    }
 
     .pageContentDiv {
+        margin-top: 2rem;
+        z-index: 2;
         display: flex;
         width: 100%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+
+        .gridboxForProjects {
+            z-index: 2;
+            // display: flex;
+            // flex-direction: column;
+            // flex-wrap: wrap;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 32rem 32rem 32rem;
+            grid-template-rows: 16rem 16rem;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+
+            .projectBox {
+                color: black;
+                // color: white;
+                width: 100%;
+                height: 100%;
+                border-radius: 2rem;
+                padding: 2rem;
+                padding-right: 0;
+                padding-bottom: 0;
+                display: flex;
+
+                justify-content: space-between;
+                align-items: center;
+
+                .imageDiv {
+                    width: 100%;
+                    overflow: hidden;
+                    position: relative;
+                    height: 100%;
+                    border-radius: 2rem;
+                    opacity: 0.7;
+
+                    img {
+                        position: absolute;
+                        top: 2rem;
+                        right: -5rem;
+                        width: 18rem;
+                    }
+
+                    .IMDB {
+                        transform: scaleX(-1);
+                        transform: scaleY(-1);
+                    }
+
+                    .Hate {
+                        transform: scaleX(1);
+                        transform: scaleY(1);
+                    }
+
+                    .Econ {
+                        width: 23rem;
+                        right: -3rem;
+                        transform: scaleX(-1);
+                    }
+                    .Object,
+                    .Employ {
+                        right: -3rem;
+                        top: 1rem;
+                    }
+                }
+
+                &:hover {
+                    .imageDiv {
+                        opacity: 1;
+
+                        img {
+                            scale: 1.15;
+                            right: -2.5rem;
+                            top: 3rem;
+                        }
+
+                        .Object {
+                            scale: 1.1;
+                            top: 1.5rem;
+                        }
+                    }
+                }
+
+                .rightArrow {
+                    width: 1.25rem;
+                    height: 1.25rem;
+                }
+
+                .projectInfo {
+                    // display: none;
+                    position: absolute;
+                    background-color: transparent;
+                    z-index: 3;
+                    width: 100%;
+                    height: 25%;
+                    .project-title {
+                        font-size: 1.3rem;
+                        font-weight: 600;
+                    }
+
+                    .project-skills {
+                        display: flex;
+                        flex-wrap: wrap;
+                        width: 30rem;
+                        margin: 0.75rem 0;
+
+                        .skill-span {
+                            padding: 0.3rem;
+                            margin: 0 0.25rem;
+                            margin-left: 0;
+                            margin-bottom: 0.25rem;
+                            min-width: 6rem;
+                            text-align: center;
+                            font-size: 0.7rem;
+                            border: 0.1rem solid black;
+                            background-color: rgb(255, 255, 255, 0.4);
+                            border-radius: 0.3rem;
+                        }
+                    }
+
+                    .github-btn {
+                        width: 5rem;
+                        position: absolute;
+                        bottom: 2rem;
+                        text-decoration: none;
+                        color: black;
+
+                        .socialIconItem {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                    }
+                }
+            }
+
+            .projectBox:hover .imageDiv {
+                opacity: 1;
+            }
+
+            .pink {
+                background-color: rgb(254, 137, 205);
+            }
+
+            .neon {
+                background-color: rgb(137, 254, 205);
+            }
+
+            .yellow {
+                background-color: rgb(254, 205, 137);
+            }
+            .green {
+                background-color: rgb(205, 254, 137);
+            }
+            .blue {
+                background-color: rgb(137, 205, 254);
+            }
+            .purple {
+                background-color: rgb(205, 137, 254);
+            }
+        }
 
         .projectDescDiv {
             // background-color: rgb(255, 0, 0);
@@ -19,17 +192,27 @@
             width: 45%;
             border-radius: 10%;
             height: 72vh;
-            margin: 0 1rem;
+            padding: 0 2rem;
             margin-right: 6rem;
+            background-color: rgba(0, 0, 0, 0.1);
+
             overflow: hidden;
 
-            .animation-for-projects {
-                // display: none;
-                position: absolute;
-                width: 42%;
-                border-radius: 2%;
-                height: 72vh;
-                overflow: hidden;
+            .Project-Content {
+                margin: 2rem;
+                text-align: justify;
+
+                .project-desc-title {
+                    padding: 1rem 0;
+                }
+
+                .project-desc-keyword {
+                    margin: 1rem 0;
+
+                    .project-keyword-title {
+                        margin: 0.5rem 0;
+                    }
+                }
             }
         }
     }
@@ -37,15 +220,16 @@
     .titleContainer {
         // background-color: rgba(0, 255, 255, 0.157);
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         display: flex;
         padding: 2rem 4.5rem;
+        flex-direction: column;
 
         .tabNames {
             font-size: 2rem;
             font-weight: 600;
             letter-spacing: 2px;
-            margin-right: 1rem;
+            margin-left: 1rem;
             align-items: center;
             display: flex;
         }
@@ -54,6 +238,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            flex-direction: column-reverse;
             width: 75%;
 
             .titleHrLine1 {
@@ -69,80 +254,6 @@
                 margin: 0.25rem;
                 width: 60%;
             }
-        }
-    }
-
-    .gridboxForProjects {
-        display: flex;
-        flex-direction: column;
-        // flex-wrap: wrap;
-        width: 50vw;
-        // display: grid;
-        // grid-template-columns: 15rem 15rem 15rem;
-        // grid-template-rows: 15rem 15rem;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-
-        .projectBox {
-            color: black;
-            // color: white;
-            width: 80%;
-            height: 7rem;
-            border-radius: 2rem;
-            padding: 1rem 2rem;
-            display: flex;
-
-            justify-content: space-between;
-            align-items: center;
-
-            .rightArrow {
-                width: 1.25rem;
-                height: 1.25rem;
-            }
-
-            .project-title {
-                font-size: 1.2rem;
-                font-weight: 600;
-            }
-
-            .project-skills {
-                display: flex;
-                // flex-wrap: wrap;
-
-                .skill-span {
-                    padding: 0.3rem;
-                    margin: 0.25rem 0.4rem;
-                    margin-left: 0;
-                    width: 5rem;
-                    text-align: center;
-                    font-size: 0.7rem;
-                    border: 0.1rem solid black;
-                    background-color: rgb(255, 255, 255, 0.4);
-                    border-radius: 0.3rem;
-                }
-            }
-        }
-
-        .pink {
-            background-color: rgb(254, 137, 205);
-        }
-
-        .neon {
-            background-color: rgb(137, 254, 205);
-        }
-
-        .yellow {
-            background-color: rgb(254, 205, 137);
-        }
-        .green {
-            background-color: rgb(205, 254, 137);
-        }
-        .blue {
-            background-color: rgb(137, 205, 254);
-        }
-        .purple {
-            background-color: rgb(205, 137, 254);
         }
     }
 }

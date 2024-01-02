@@ -27,25 +27,25 @@ const SkillsSection = () => {
                     </div>
                 </div>
                 <div className="skillContainer">
-                    <div className="hex-layer-6">
-                        <div className="hex empty-3 blue"></div>
-                        <div className="hex empty-1 yellow"></div>
-                        <div className="hex  green">
+                    <div className="gel pulse-gel hex-layer-6">
+                        <div className="hex empty-3 blue r4"></div>
+                        <div className="hex empty-1 yellow r4"></div>
+                        <div className="hex  green r3">
                             <img src={cpp} alt="cpp" className="logo_img" />
                         </div>
-                        <div className="hex pink">
+                        <div className="hex pink r2">
                             {" "}
                             <img src={js} alt="js" className="logo_img" />
                         </div>
-                        <div className="hex blue">
+                        <div className="hex blue r1">
                             {" "}
                             <img src={numpy} alt="numpy" className="logo_img" />
                         </div>
-                        <div className="hex pink">
+                        <div className="hex pink r1">
                             {" "}
                             <img src={react} alt="react" className="logo_img" />
                         </div>
-                        <div className="hex blue">
+                        <div className="hex blue r2">
                             {" "}
                             <img
                                 src={opencv}
@@ -53,7 +53,7 @@ const SkillsSection = () => {
                                 className="logo_img"
                             />
                         </div>
-                        <div className="hex neon">
+                        <div className="hex neon r3">
                             {" "}
                             <img
                                 src={mongo}
@@ -61,14 +61,14 @@ const SkillsSection = () => {
                                 className="logo_img"
                             />
                         </div>
-                        <div className="hex empty-1 pink"></div>
-                        <div className="hex empty-3 blue"></div>
+                        <div className="hex empty-1 pink r4"></div>
+                        <div className="hex empty-3 blue r4"></div>
                     </div>
-                    <div className="hex-layer-5">
-                        <div className="hex empty-6 pink"></div>
-                        <div className="hex empty-4 green"></div>
-                        <div className="hex empty-2 blue"></div>
-                        <div className="hex blue">
+                    <div className="gel pulse-gel hex-layer-5">
+                        <div className="hex empty-6 pink r3"></div>
+                        <div className="hex empty-4 green r3"></div>
+                        <div className="hex empty-2 blue r3"></div>
+                        <div className="hex blue r2">
                             {" "}
                             <img
                                 src={python}
@@ -76,7 +76,7 @@ const SkillsSection = () => {
                                 className="logo_img"
                             />
                         </div>
-                        <div className="hex blue">
+                        <div className="hex blue r1">
                             {" "}
                             <img
                                 src={pandas}
@@ -84,15 +84,15 @@ const SkillsSection = () => {
                                 className="logo_img"
                             />
                         </div>
-                        <div className="hex blue">
+                        <div className="hex blue central-gel">
                             {" "}
                             <img src={skl} alt="sklearn" className="logo_img" />
                         </div>
-                        <div className="hex green">
+                        <div className="hex green r1">
                             {" "}
                             <img src={git} alt="git" className="logo_img" />
                         </div>
-                        <div className="hex blue">
+                        <div className="hex blue r2">
                             {" "}
                             <img
                                 src={keras}
@@ -100,15 +100,15 @@ const SkillsSection = () => {
                                 className="logo_img keras"
                             />
                         </div>
-                        <div className="hex empty-2 green"></div>
-                        <div className="hex empty-4 blue"></div>
-                        <div className="hex empty-6 blue"></div>
+                        <div className="hex empty-2 green r3"></div>
+                        <div className="hex empty-4 blue r3"></div>
+                        <div className="hex empty-6 blue r3"></div>
                     </div>
-                    <div className="hex-layer-4">
-                        <div className="hex empty-3 blue"></div>
-                        <div className="hex empty-1 pink"></div>
-                        <div className="hex empty-0 green"></div>
-                        <div className="hex blue">
+                    <div className="gel pulse-gel hex-layer-4">
+                        <div className="hex empty-3 blue r4"></div>
+                        <div className="hex empty-1 pink r4"></div>
+                        <div className="hex empty-0 green r3"></div>
+                        <div className="hex blue r2">
                             {" "}
                             <img
                                 src={tf}
@@ -116,11 +116,11 @@ const SkillsSection = () => {
                                 className="logo_img"
                             />
                         </div>
-                        <div className="hex pink">
+                        <div className="hex pink r1">
                             {" "}
                             <img src={node} alt="nodejs" className="logo_img" />
                         </div>
-                        <div className="hex blue">
+                        <div className="hex blue r1">
                             {" "}
                             <img
                                 src={matplotlib}
@@ -128,13 +128,13 @@ const SkillsSection = () => {
                                 className="logo_img"
                             />
                         </div>
-                        <div className="hex neon">
+                        <div className="hex neon r2">
                             {" "}
                             <img src={mysql} alt="mysql" className="logo_img" />
                         </div>
-                        <div className="hex empty-0 blue"></div>
-                        <div className="hex empty-1 blue"></div>
-                        <div className="hex empty-3 pink"></div>
+                        <div className="hex empty-0 blue r3"></div>
+                        <div className="hex empty-1 blue r4"></div>
+                        <div className="hex empty-3 pink r4"></div>
                     </div>
                 </div>
             </div>

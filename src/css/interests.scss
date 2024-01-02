@@ -2,8 +2,8 @@
     width: 100%;
     padding-top: 0;
     height: 100vh;
-    background-color: white;
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: flex;
     position: relative;
     overflow: hidden;
@@ -26,6 +26,8 @@
             display: flex;
             padding: 2rem 4.5rem;
             flex-direction: column;
+            z-index: 3;
+            width: 100%;
 
             .tabNames {
                 font-size: 2rem;
@@ -41,13 +43,20 @@
                 flex-direction: column;
                 justify-content: space-evenly;
                 flex-direction: column-reverse;
-                width: 50rem;
+                width: 75%;
 
+                .titleHrLine1 {
+                    background-color: rgb(205, 254, 137);
+                    height: 2px;
+                    margin: 0.25rem;
+                    width: 60%;
+                    margin-left: 40%;
+                }
                 .titleHrLine2 {
                     background-color: rgb(137, 205, 254);
                     height: 2px;
                     margin: 0.25rem;
-                    width: 100%;
+                    width: 60%;
                 }
             }
         }
@@ -62,6 +71,7 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0 3rem;
+                border: 1px solid black;
                 border-radius: 5%;
 
                 .titleforDiv {
@@ -81,6 +91,7 @@
 
                     .IconImage {
                         width: 12rem;
+                        filter: invert(1);
                         // height: 0rem;
                     }
                 }
@@ -91,18 +102,30 @@
                 transform: scale(0.9);
                 transition: all 200ms ease-in;
                 transition-delay: 75ms;
-                background-color: rgba(137, 205, 254, 0.25);
+                color: rgba(137, 205, 254);
                 cursor: pointer;
             }
 
             .HoverYellow:hover {
-                background: rgba(254, 205, 137, 0.55);
+                filter: brightness(0) saturate(100%) invert(83%) sepia(16%)
+                    saturate(1230%) hue-rotate(334deg) brightness(104%)
+                    contrast(99%);
+                color: rgb(254, 205, 137);
+                border: 1px solid rgba(254, 205, 137);
             }
-            .HoverGreen:hover {
-                background: rgba(205, 254, 137, 0.55);
+            .HoverPink:hover {
+                filter: brightness(0) saturate(100%) invert(79%) sepia(35%)
+                    saturate(1927%) hue-rotate(284deg) brightness(101%)
+                    contrast(99%);
+                color: rgb(254, 137, 205);
+                border: 1px solid rgb(254, 137, 205);
             }
             .HoverBlue:hover {
-                background: rgba(137, 205, 254, 0.55);
+                filter: brightness(0) saturate(100%) invert(66%) sepia(78%)
+                    saturate(429%) hue-rotate(181deg) brightness(105%)
+                    contrast(99%);
+                color: rgb(137, 205, 254);
+                border: 1px solid rgba(137, 205, 254);
             }
         }
 
@@ -114,7 +137,6 @@
             height: 30vh;
             display: flex;
             justify-content: center;
-            background-color: aqua;
 
             .education,
             .workEx {
@@ -153,12 +175,31 @@
 
             .Bookshelf {
                 overflow: hidden;
-                width: 60vw;
+                width: 67vw;
                 height: 18rem; // Adjust this as necessary to fit the content
                 display: flex;
                 justify-content: center;
                 align-items: center; // This will vertically center the slides
                 margin: 0 auto;
+
+                .swiper-button-next,
+                .swiper-button-prev {
+                    height: 1rem;
+                    padding: 2rem;
+                    position: static;
+                    color: white;
+                    // margin: 0 10px;
+
+                    cursor: pointer;
+
+                    transition: background-color 0.3s ease;
+                }
+
+                /* Change button color on hover */
+                .swiper-button-next:hover,
+                .swiper-button-prev:hover {
+                    scale: 0.75;
+                }
 
                 .swiper-container {
                     width: 100%;
@@ -169,8 +210,6 @@
                     justify-content: center;
                     align-items: center;
                     height: auto; // Let the height grow with the content
-
-                    background-color: pink;
 
                     img {
                         width: 14rem; // Set a fixed width for the images

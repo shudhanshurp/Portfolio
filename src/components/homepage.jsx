@@ -6,6 +6,30 @@ const HomePage = () => {
         <div className="homepageContainer">
             <AboutMeSection />
             <div className="spline-Animation">
+                <div className="backgroundSpline">
+                    <div className="spline-3">
+                        <img src="\src\assets\planet3.png" alt="" />
+                    </div>
+                    <div className="spline-4">
+                        <img src="\src\assets\planet2.png" alt="" />
+                    </div>
+                    <div className="spline-5">
+                        <img src="\src\assets\saturn.png" alt="" />
+                    </div>
+                    <div className="spline-6">
+                        <img src="\src\assets\shape1.png" alt="" />
+                    </div>
+                    <div className="spline-7">
+                        <img src="\src\assets\shape2.png" alt="" />
+                    </div>
+                    <div className="spline-8">
+                        <img src="\src\assets\orb.png" alt="" />
+                    </div>
+                </div>
+
+                <div className="spline-2">
+                    <img src="\src\assets\astro.png" alt="" />
+                </div>
                 <div className="spline-1">
                     <Spline scene="https://prod.spline.design/TwoImwLoAD2NLzwU/scene.splinecode" />
                 </div>

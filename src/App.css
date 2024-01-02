@@ -527,4 +527,313 @@
     bottom: 12rem;
 }
 
+.spline-2 {
+    position: absolute;
+    top: -50rem;
+    scale: 0.5;
+    right: -4.5rem;
+    filter: drop-shadow(10px 10px 30px 10px);
+    animation: moveAstro 2s infinite;
+    transition: 0.3 ease-in-out;
+}
+
+@keyframes moveAstro {
+    0% {
+        top: -50rem;
+    }
+    25% {
+        top: -49.75rem;
+    }
+    50% {
+        top: -49.5rem;
+    }
+    75% {
+        top: -49.75rem;
+    }
+    100% {
+        top: -50rem;
+    }
+}
+
+.backgroundSpline {
+    position: relative;
+    width: 100%;
+
+    filter: drop-shadow(10px 10px 30px 10px);
+}
+
+.spline-3 {
+    position: absolute;
+    left: 97rem;
+    scale: 0.6;
+    bottom: 20rem;
+    opacity: 0.6;
+    animation: moveSpline3 2s infinite;
+    transition: 0.3 ease-in-out;
+}
+
+@keyframes moveSpline3 {
+    0% {
+        bottom: 20rem;
+        left: 97rem;
+    }
+    25% {
+        bottom: 19.8rem;
+        left: 96.9rem;
+    }
+    50% {
+        bottom: 19.6rem;
+        left: 96.8rem;
+    }
+    75% {
+        bottom: 19.8rem;
+        left: 96.9rem;
+    }
+    100% {
+        bottom: 20rem;
+        left: 97rem;
+    }
+}
+
+.spline-5 {
+    position: absolute;
+    left: 100rem;
+    scale: 0.4;
+    bottom: 5rem;
+    opacity: 0.7;
+    animation: moveSpline5 2s infinite;
+    transition: 0.3 ease-in-out;
+}
+
+@keyframes moveSpline5 {
+    0% {
+        bottom: 5rem;
+    }
+    25% {
+        bottom: 5.1rem;
+    }
+    50% {
+        bottom: 5.2rem;
+    }
+    75% {
+        bottom: 5.1rem;
+    }
+    100% {
+        bottom: 5rem;
+    }
+}
+
+.spline-4 {
+    position: absolute;
+    left: 96rem;
+    scale: 0.7;
+    bottom: 0rem;
+    opacity: 0.75;
+    animation: moveSpline4 2s infinite;
+    transition: 0.3 ease-in-out;
+}
+
+@keyframes moveSpline4 {
+    0% {
+        bottom: 0rem;
+        left: 96rem;
+    }
+    25% {
+        bottom: 0.2rem;
+        left: 96.1rem;
+    }
+    50% {
+        bottom: 0.4rem;
+        left: 96.2rem;
+    }
+    75% {
+        bottom: 0.2rem;
+        left: 96.1rem;
+    }
+    100% {
+        bottom: 0rem;
+        left: 96rem;
+    }
+}
+
+.spline-6 {
+    position: absolute;
+    left: 108rem;
+    scale: 0.4;
+    bottom: 28rem;
+    opacity: 0.4;
+    animation: moveSpline6 2s infinite;
+    transition: 0.3 ease-in-out;
+}
+
+@keyframes moveSpline6 {
+    0% {
+        bottom: 28rem;
+    }
+    25% {
+        bottom: 28.1rem;
+        transform: rotate(2.5deg);
+    }
+    50% {
+        bottom: 28.2rem;
+        transform: rotate(5deg);
+    }
+    75% {
+        bottom: 28.1rem;
+        transform: rotate(2.5deg);
+    }
+    100% {
+        bottom: 28rem;
+    }
+}
+
+.spline-7 {
+    position: absolute;
+    left: 112rem;
+    scale: 0.8;
+    bottom: 0rem;
+    opacity: 0.3;
+    animation: moveSpline7 2s infinite;
+    transition: 0.3 ease-in-out;
+}
+
+@keyframes moveSpline7 {
+    0% {
+        bottom: 0rem;
+    }
+    25% {
+        bottom: 0.1rem;
+    }
+    50% {
+        bottom: 0.15rem;
+    }
+    75% {
+        bottom: 0.1rem;
+    }
+    100% {
+        bottom: 0rem;
+    }
+}
+
+.spline-8 {
+    position: absolute;
+    left: 100rem;
+    scale: 0.4;
+    bottom: 18rem;
+    opacity: 0.8;
+    animation: moveSpline8 2s infinite;
+    transition: 0.3 ease-in-out;
+}
+
+@keyframes moveSpline8 {
+    0% {
+        bottom: 18rem;
+    }
+    25% {
+        bottom: 18.25rem;
+    }
+    50% {
+        bottom: 18.5rem;
+    }
+    75% {
+        bottom: 18.25rem;
+    }
+    100% {
+        bottom: 18rem;
+    }
+}
+
 /* spline animation end */
+
+/* fade effect in techstack start */
+
+.gel {
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.central-gel {
+    animation-name: pulse00;
+    animation-duration: 2s;
+}
+.r1 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+
+.r2 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+    animation-delay: 0.4s;
+}
+
+.r3 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+
+    animation-delay: 0.6s;
+}
+
+.r4 {
+    animation-name: pulse00;
+    animation-duration: 2s;
+
+    animation-delay: 0.8s;
+}
+
+@keyframes pulse00 {
+    0% {
+        transform: scale(0);
+        height: 0;
+        width: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        height: 11rem;
+        width: 11rem;
+    }
+}
+
+.logo_img {
+    width: 7rem;
+    animation-name: pulse01;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+}
+
+.keras {
+    width: 5.5rem;
+    animation-name: pulse02;
+    animation-duration: 2s;
+    animation-delay: 0.8s;
+}
+
+@keyframes pulse01 {
+    0% {
+        transform: scale(0);
+        width: 0;
+    }
+
+    100% {
+        transform: scale(1);
+
+        width: 7rem;
+    }
+}
+
+@keyframes pulse02 {
+    0% {
+        transform: scale(0);
+        width: 0;
+    }
+
+    100% {
+        transform: scale(1);
+
+        width: 5.5rem;
+    }
+}
+
+/* fade effect in techstack end */
