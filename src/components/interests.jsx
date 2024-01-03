@@ -15,7 +15,7 @@ import bookstack from "../assets/bookstack_logo.png";
 import work_ex from "../assets/work_ex_logo.png";
 
 const InterestSection = () => {
-    const [activeSection, setActiveSection] = useState("education");
+    const [activeSection, setActiveSection] = useState("edu");
 
     const handleSectionClick = (section) => {
         setActiveSection(section);
@@ -32,7 +32,11 @@ const InterestSection = () => {
                 </div>
                 <div className="IconContainer ">
                     <div
-                        className="ImageContainer HoverYellow"
+                        className={`${
+                            activeSection === "edu"
+                                ? "ImageContainer HoverYellow Active"
+                                : "ImageContainer HoverYellow"
+                        }`}
                         onClick={() => handleSectionClick("edu")}
                     >
                         <div className="ImageResize">
@@ -46,7 +50,11 @@ const InterestSection = () => {
                         <div className="titleforDiv">Education</div>
                     </div>
                     <div
-                        className="ImageContainer HoverPink"
+                        className={`${
+                            activeSection === "workEx"
+                                ? "ImageContainer HoverPink Active"
+                                : "ImageContainer HoverPink"
+                        }`}
                         onClick={() => handleSectionClick("workEx")}
                     >
                         <div className="ImageResize ">
@@ -61,7 +69,11 @@ const InterestSection = () => {
                         <div className="titleforDiv">Work Experience</div>
                     </div>
                     <div
-                        className="ImageContainer HoverBlue"
+                        className={`${
+                            activeSection === "book"
+                                ? "ImageContainer HoverBlue Active"
+                                : "ImageContainer HoverBlue"
+                        }`}
                         onClick={() => handleSectionClick("book")}
                     >
                         <div className="ImageResize ">
@@ -239,34 +251,48 @@ const InterestSection = () => {
                     )}
                 </div>
             </div>
-            <div className="drip-wrapper">
-                <div className="drip-top"></div>
-                <div className="drip"></div>
-                <div className="drip"></div>
-                <div className="drip"></div>
-                <div className="drip"></div>
-                <div className="drip"></div>
-                <div className="drip"></div>
-                <div className="drip"></div>
-                <div className="drip"></div>
-
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <div className="hero_area">
+                <svg
+                    className="waves"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 24 150 28"
+                    preserveAspectRatio="none"
+                    shapeRendering="auto"
+                >
                     <defs>
-                        <filter id="goo">
-                            <feGaussianBlur
-                                in="SourceGraphic"
-                                stdDeviation="10"
-                                result="blur"
-                            />
-                            <feColorMatrix
-                                in="blur"
-                                mode="matrix"
-                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                                result="goo"
-                            />
-                            <feBlend in="SourceGraphic" in2="goo" />
-                        </filter>
+                        <path
+                            id="gentle-wave"
+                            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                        />
                     </defs>
+                    <g className="parallax">
+                        <use
+                            xlinkHref="#gentle-wave"
+                            x="48"
+                            y="16"
+                            fill="rgba(255,255,255,0.8)"
+                        />
+                        <use
+                            xlinkHref="#gentle-wave"
+                            x="48"
+                            y="12"
+                            fill="rgba(205,254,137, 0.6)"
+                        />
+                        <use
+                            xlinkHref="#gentle-wave"
+                            x="48"
+                            y="8"
+                            fill="rgba(254, 137, 205, 0.4)"
+                        />
+                        <use
+                            xlinkHref="#gentle-wave"
+                            x="48"
+                            y="4"
+                            fill="rgba(137, 205, 254,0.2)"
+                        />
+                        {/* <use xlinkHref="#gentle-wave" x="48" y="0" fill="#fff" /> */}
+                    </g>
                 </svg>
             </div>
         </div>

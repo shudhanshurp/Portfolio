@@ -141,7 +141,7 @@ const projects = [
 
 const ProjectBox = ({
     title,
-    skills,
+
     color,
     desc,
     keywords,

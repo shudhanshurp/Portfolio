@@ -60,6 +60,8 @@
                 margin: 0;
                 justify-content: center;
                 align-content: center;
+                height: 11rem;
+                overflow: visible;
 
                 .hex {
                     margin: 0 0.5rem;
@@ -99,6 +101,10 @@
                     margin: 0;
                 }
 
+                .hex:hover .logo_img {
+                    width: 7.5rem;
+                }
+
                 .empty-1 {
                     opacity: 60%;
                 }
@@ -114,6 +120,8 @@
 
                 align-content: center;
                 grid-template-columns: repeat(11, 0fr);
+                height: 11rem;
+                overflow: visible;
 
                 .hex {
                     height: 11rem;
@@ -161,6 +169,14 @@
                     margin: 0;
                 }
 
+                .hex:hover .logo_img {
+                    width: 7.5rem;
+                }
+
+                .hex:hover .keras {
+                    width: 6.5rem;
+                }
+
                 .empty-2 {
                     opacity: 80%;
                 }
@@ -179,6 +195,8 @@
                 justify-content: center;
                 align-content: center;
                 grid-template-columns: repeat(10, 0fr);
+                height: 11rem;
+                overflow: visible;
 
                 .hex {
                     height: 11rem;
@@ -220,6 +238,10 @@
                     height: 12rem;
                     background: white;
                     margin: 0;
+                }
+
+                .hex:hover .logo_img {
+                    width: 7.5rem;
                 }
 
                 .empty-0 {
