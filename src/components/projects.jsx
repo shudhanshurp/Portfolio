@@ -5,6 +5,11 @@ import "css-doodle";
 import "../css/projects.scss";
 import anim from "../touch.js";
 import { SiGithub } from "react-icons/si";
+import imbd from "../assets/imdb3D.png";
+import mute from "../assets/mute3D.webp";
+import ecom from "../assets/dashboard3D.png";
+import object from "../assets/ml3D.png";
+import emply from "../assets/management3D.png";
 
 const projects = [
     {
@@ -29,7 +34,7 @@ const projects = [
             "SkLearn",
             "Pickle",
         ],
-        image: "./src/assets/imdb3D.png",
+        image: imbd,
         imgClass: "IMDB",
         github: "https://github.com/shudhanshurp/Movie-Review-Sentiment-Backend",
     },
@@ -53,7 +58,7 @@ const projects = [
             "SpeechRecognition",
             "PyAudio",
         ],
-        image: "./src/assets/mute3D.webp",
+        image: mute,
         imgClass: "Hate",
         github: "https://github.com/shudhanshurp/Hate-speech-detection",
     },
@@ -74,7 +79,7 @@ const projects = [
             "Data Visualization",
             "Chart.js",
         ],
-        image: "./src/assets/dashboard3D.png",
+        image: ecom,
         imgClass: "Econ",
         github: "https://github.com/shudhanshurp/Economy-Dashboard",
     },
@@ -97,7 +102,7 @@ const projects = [
             "Anomaly Detection",
             "LOF",
         ],
-        image: "./src/assets/ml3D.png",
+        image: object,
         imgClass: "Object",
         github: "https://github.com/shudhanshurp/Object-Detection-and-Tracking",
     },
@@ -120,20 +125,7 @@ const projects = [
             "XAMPP",
             "MySQL",
         ],
-        image: "./src/assets/management3D.png",
-        imgClass: "Employ",
-        github: "https://github.com/shudhanshurp/Employee-Management-System",
-    },
-    {
-        id: 6,
-        title: "Employee Management System",
-        skills: ["PHP", "JavaScript", "CSS", "MySQL"],
-        color: "blue",
-        // desc: 'The "Employee Management System" project is a full-stack web application designed for managing employee records. It uses basic HTML, CSS, and JavaScript for front-end development, with PHP as the backend language and MySQL for the database. The application offers functionalities such as employee registration, profile management, and managing company activities like leave approval, etc. The system runs on an Apache server using XAMPP, and the database is managed with phpMyAdmin. It implements core web programming concepts like sessions for tracking user login state, GET and POST methods for handling user input, regular expressions for input validation, SQL queries for database interaction, and JavaScript for event handling. The system consists of several tables including employee, admin, and personal information, which work together to facilitate the functionality of the web application',
-        keywords: [
-            "HTML, CSS, JavaScript, Web development, PHP, MySQL, XAMPP, MySQL",
-        ],
-        image: "./src/assets/management3D.png",
+        image: emply,
         imgClass: "Employ",
         github: "https://github.com/shudhanshurp/Employee-Management-System",
     },

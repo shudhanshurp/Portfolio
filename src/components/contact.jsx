@@ -49,7 +49,7 @@ const ContactSection = () => {
                 </div>
                 <button className="sendEmailBtn">Send Email</button>
                 <div className="signContainer">
-                    <div className="signDiv">Developed By</div>
+                    <div className="signDiv">Design & Developed By</div>
                     <img src={logo} alt="" className="logo" />
                 </div>
             </div>

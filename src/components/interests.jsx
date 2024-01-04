@@ -13,6 +13,21 @@ import { Navigation } from "swiper/modules";
 import education from "../assets/education_logo.png";
 import bookstack from "../assets/bookstack_logo.png";
 import work_ex from "../assets/work_ex_logo.png";
+import unt from "../assets/unt_logo.jpg";
+import ldce from "../assets/ldce_logo.jpg";
+import nioclass from "../assets/nioclass_logo.jpg";
+
+import cant from "../assets/can_hurt_me.jpg";
+import algo from "../assets/algo_live.jpg";
+import atomic from "../assets/atomic_habits.jpg";
+import laws from "../assets/laws_power.jpg";
+import comfort from "../assets/comfort_crisis.jpg";
+import start from "../assets/start_why.jpeg";
+import think from "../assets/think_monk.jpg";
+import rules from "../assets/rules_of_life.jpg";
+import never from "../assets/never_finished.jpg";
+import milion from "../assets/milion_fastlane.jpg";
+import moved from "../assets/moved_cheese.jpg";
 
 const InterestSection = () => {
     const [activeSection, setActiveSection] = useState("edu");
@@ -93,10 +108,7 @@ const InterestSection = () => {
                         <div className="AllDetails education">
                             <div className="details-2">
                                 <div className="logo">
-                                    <img
-                                        src="/src/assets/unt_logo.jpg"
-                                        alt=""
-                                    />
+                                    <img src={unt} alt="" />
                                 </div>
                                 <div className="others">
                                     <div className="Institute">
@@ -113,10 +125,7 @@ const InterestSection = () => {
                             </div>
                             <div className="details-1">
                                 <div className="logo">
-                                    <img
-                                        src="/src/assets/ldce_logo.jpg"
-                                        alt=""
-                                    />
+                                    <img src={ldce} alt="" />
                                 </div>
                                 <div className="others">
                                     <div className="Institute">
@@ -140,10 +149,7 @@ const InterestSection = () => {
                         <div className="AllDetails workEx">
                             <div className="details-1">
                                 <div className="logo">
-                                    <img
-                                        src="/src/assets/nioclass_logo.jpg"
-                                        alt=""
-                                    />
+                                    <img src={nioclass} alt="" />
                                 </div>
                                 <div className="others">
                                     <div className="Institute">
@@ -178,70 +184,37 @@ const InterestSection = () => {
                                 className="mySwiper"
                             >
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/can_hurt_me.jpg"
-                                        alt=""
-                                    />
+                                    <img src={cant} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/algo_live.jpg"
-                                        alt=""
-                                    />
+                                    <img src={algo} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/atomic_habits.jpg"
-                                        alt=""
-                                    />
+                                    <img src={atomic} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/laws_power.jpg"
-                                        alt=""
-                                    />
+                                    <img src={laws} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/comfort_crisis.jpg"
-                                        alt=""
-                                    />
+                                    <img src={comfort} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/start_why.jpeg"
-                                        alt=""
-                                    />
+                                    <img src={start} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/think_monk.jpg"
-                                        alt=""
-                                    />
+                                    <img src={think} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/rules_of_life.jpg"
-                                        alt=""
-                                    />
+                                    <img src={rules} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/never_finished.jpg"
-                                        alt=""
-                                    />
+                                    <img src={never} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/milion_fastlane.jpg"
-                                        alt=""
-                                    />
+                                    <img src={milion} alt="" />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img
-                                        src="/src/assets/moved_cheese.jpg"
-                                        alt=""
-                                    />
+                                    <img src={moved} alt="" />
                                 </SwiperSlide>
                             </Swiper>
                             <div className="swiper-button-next"></div>
