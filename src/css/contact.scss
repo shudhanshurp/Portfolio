@@ -59,6 +59,7 @@
             margin: 1rem;
             display: flex;
             align-items: center;
+            transition: all 0.4s ease;
 
             .socialIconItem {
                 width: 2.5rem;
@@ -67,54 +68,63 @@
         }
 
         .instagram:hover {
-            background: #f09433;
-            background: -moz-linear-gradient(
-                45deg,
-                #f09433 0%,
-                #e6683c 25%,
-                #dc2743 50%,
-                #cc2366 75%,
-                #bc1888 100%
-            );
-            background: -webkit-linear-gradient(
-                45deg,
-                #f09433 0%,
-                #e6683c 25%,
-                #dc2743 50%,
-                #cc2366 75%,
-                #bc1888 100%
-            );
-            background: linear-gradient(
-                45deg,
-                #f09433 0%,
-                #e6683c 25%,
-                #dc2743 50%,
-                #cc2366 75%,
-                #bc1888 100%
-            );
-
-            transition: all 0.4s ease-in-out;
-            transition-delay: 75ms;
+            background-color: #ee4097c7;
+            transition: 0.4s;
+            scale: 0.9;
+            // background: -moz-linear-gradient(
+            //     45deg,
+            //     #f09433 0%,
+            //     #e6683c 25%,
+            //     #dc2743 50%,
+            //     #cc2366 75%,
+            //     #bc1888 100%
+            // );
+            // background: -webkit-linear-gradient(
+            //     45deg,
+            //     #f09433 0%,
+            //     #e6683c 25%,
+            //     #dc2743 50%,
+            //     #cc2366 75%,
+            //     #bc1888 100%
+            // );
+            // background: linear-gradient(
+            //     45deg,
+            //     #f09433 0%,
+            //     #e6683c 25%,
+            //     #dc2743 50%,
+            //     #cc2366 75%,
+            //     #bc1888 100%
+            // );
         }
 
         .github:hover {
-            background-color: #242c34;
+            background-color: #242c34c7;
+            transition: 0.4s;
+            scale: 0.9;
         }
 
         .linkedin:hover {
-            background-color: #0a66c2;
+            background-color: #0a66c2c7;
+            transition: 0.4s;
+            scale: 0.9;
         }
 
         .twitter:hover {
-            background-color: #14a4ed;
+            background-color: #14a5edb6;
+            transition: 0.4s;
+            scale: 0.9;
         }
 
         .leetcode:hover {
-            background-color: #e2a148;
+            background-color: #e2a148c7;
+            transition: 0.4s;
+            scale: 0.9;
         }
 
         .hackerrank:hover {
-            background-color: #00e861;
+            background-color: #00e861c7;
+            transition: 0.4s;
+            scale: 0.9;
         }
     }
 
@@ -170,11 +180,25 @@
             padding: 0 2rem;
             font-size: 0.9rem;
             background: transparent;
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 200ms;
+            transition-delay: 50ms;
+            position: relative;
+            background: #ffffff;
+            color: #000000;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 0 #ffffff;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
         }
 
         .sendEmailBtn:hover {
-            border: none;
-            background-color: #e74b3e;
+            background: transparent;
+            background-color: black;
+            color: #ffffff;
+            box-shadow: 0 0 5px #ffffff;
         }
 
         .signContainer {
