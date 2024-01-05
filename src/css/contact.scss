@@ -1,5 +1,4 @@
 .contactSection {
-    padding-top: 4rem;
     height: 90vh;
     color: white;
     // width: 100%;
@@ -12,11 +11,11 @@
         align-items: center;
         justify-content: center;
         display: flex;
-        padding: 2rem 4.5rem;
+        padding: 2.5%;
         flex-direction: column;
 
         .tabNames {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 600;
             letter-spacing: 2px;
             margin-left: 1rem;
@@ -34,14 +33,14 @@
 
             .titleHrLine1 {
                 background-color: rgb(255, 255, 255);
-                height: 2px;
+                height: 1.5px;
                 margin: 0.25rem;
                 width: 60%;
                 margin-left: 40%;
             }
             .titleHrLine2 {
                 background-color: rgb(255, 255, 255);
-                height: 2px;
+                height: 1.5px;
                 margin: 0.25rem;
                 width: 60%;
             }
@@ -51,8 +50,8 @@
     .socialContainer {
         display: flex;
         justify-content: center;
-        gap: 4rem;
-        margin: 1rem;
+        gap: 3rem;
+        margin: 0rem;
 
         .socialIcon {
             border-radius: 10%;
@@ -62,8 +61,8 @@
             align-items: center;
 
             .socialIconItem {
-                width: 3rem;
-                height: 3rem;
+                width: 2.5rem;
+                height: 2.5rem;
             }
         }
 
@@ -134,7 +133,7 @@
             height: 50%;
             left: -30rem;
             position: absolute;
-            bottom: 27rem;
+            bottom: 21rem;
             background: #000;
         }
 
@@ -155,19 +154,21 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
         .someEmailIntro {
-            width: 50rem;
+            font-size: 0.9rem;
+            width: 55rem;
             word-wrap: break-word;
             text-align: center;
         }
 
         .sendEmailBtn {
-            height: 3rem;
-            margin-top: 3rem;
+            height: 2.5rem;
+            margin-top: 2rem;
             border: 1px solid white;
             padding: 0 2rem;
+            font-size: 0.9rem;
             background: transparent;
         }
 
@@ -181,7 +182,8 @@
             flex-direction: column;
             align-items: center;
             position: absolute;
-            bottom: 12rem;
+            bottom: 27.5%;
+            font-size: 0.85rem;
             z-index: 2;
         }
 
