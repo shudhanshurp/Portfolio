@@ -524,222 +524,241 @@
     left: 5px;
     scale: 1.05;
     z-index: -2;
-    bottom: 12rem;
+    bottom: 15%;
 }
 
 .spline-2 {
     position: absolute;
-    top: -50rem;
-    scale: 0.5;
-    right: -4.5rem;
+    top: -80vh;
+    scale: 0.4;
+    height: 100%;
+    width: 100%;
+    left: 30vw;
     filter: drop-shadow(10px 10px 30px 10px);
     animation: moveAstro 2s infinite;
-    transition: 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
 }
 
 @keyframes moveAstro {
     0% {
-        top: -50rem;
+        top: -80vh;
     }
     25% {
-        top: -49.75rem;
+        top: -81vh;
     }
     50% {
-        top: -49.5rem;
+        top: -82vh;
     }
     75% {
-        top: -49.75rem;
+        top: -81vh;
     }
     100% {
-        top: -50rem;
+        top: -80vh;
     }
 }
 
 .backgroundSpline {
     position: relative;
     width: 100%;
-
+    height: 100%;
     filter: drop-shadow(10px 10px 30px 10px);
 }
 
 .spline-3 {
     position: absolute;
-    left: 97rem;
-    scale: 0.6;
-    bottom: 20rem;
+    left: 54vw;
+    scale: 0.5;
+    bottom: 81vh;
+    height: 100%;
+    width: 100%;
     opacity: 0.6;
     animation: moveSpline3 2s infinite;
-    transition: 0.3 ease-in-out;
+    transition: all 0.3 ease-in-out;
 }
 
 @keyframes moveSpline3 {
     0% {
-        bottom: 20rem;
-        left: 97rem;
+        bottom: 81vh;
+        left: 54vw;
     }
     25% {
-        bottom: 19.8rem;
-        left: 96.9rem;
+        bottom: 81.25vh;
+        left: 54.25vw;
     }
     50% {
-        bottom: 19.6rem;
-        left: 96.8rem;
+        bottom: 81.5vh;
+        left: 54.5vw;
     }
     75% {
-        bottom: 19.8rem;
-        left: 96.9rem;
+        bottom: 81.25vh;
+        left: 54.25vw;
     }
     100% {
-        bottom: 20rem;
-        left: 97rem;
+        bottom: 81vh;
+        left: 54vw;
     }
 }
 
+/* saturn animation  */
 .spline-5 {
     position: absolute;
-    left: 100rem;
-    scale: 0.4;
-    bottom: 5rem;
+    left: 57.5vw;
+    height: 100%;
+    width: 100%;
+    scale: 0.3;
+    bottom: 70vh;
     opacity: 0.7;
     animation: moveSpline5 2s infinite;
-    transition: 0.3 ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 @keyframes moveSpline5 {
     0% {
-        bottom: 5rem;
+        bottom: 70vh;
     }
     25% {
-        bottom: 5.1rem;
+        bottom: 70.15vh;
     }
     50% {
-        bottom: 5.2rem;
+        bottom: 70.3vh;
     }
     75% {
-        bottom: 5.1rem;
+        bottom: 70.15vh;
     }
     100% {
-        bottom: 5rem;
+        bottom: 70vh;
     }
 }
 
+/* spike planet animation/ */
+
 .spline-4 {
     position: absolute;
-    left: 96rem;
-    scale: 0.7;
-    bottom: 0rem;
+    left: 56vw;
+    scale: 0.6;
+    height: 100%;
+    width: 100%;
+    bottom: 40vh;
     opacity: 0.75;
-    animation: moveSpline4 2s infinite;
-    transition: 0.3 ease-in-out;
+    animation: moveSpline4 3s infinite;
+    transition: all 0.3 ease-in-out;
 }
 
 @keyframes moveSpline4 {
     0% {
-        bottom: 0rem;
-        left: 96rem;
+        bottom: 40vh;
+        left: 56vw;
     }
     25% {
-        bottom: 0.2rem;
-        left: 96.1rem;
+        bottom: 39.75vh;
+        left: 56.2vw;
     }
     50% {
-        bottom: 0.4rem;
-        left: 96.2rem;
+        bottom: 39.5vh;
+        left: 56.4vw;
     }
     75% {
-        bottom: 0.2rem;
-        left: 96.1rem;
+        bottom: 39.75vh;
+        left: 56.2vw;
     }
     100% {
-        bottom: 0rem;
-        left: 96rem;
+        bottom: 40vh;
+        left: 56vw;
     }
 }
 
+/* triangle animation  */
+
 .spline-6 {
     position: absolute;
-    left: 108rem;
-    scale: 0.4;
-    bottom: 28rem;
+    left: 56vw;
+    scale: 0.3;
+    height: 100%;
+    width: 100%;
+    bottom: 90vh;
     opacity: 0.4;
-    animation: moveSpline6 2s infinite;
-    transition: 0.3 ease-in-out;
+    animation: moveSpline6 5s infinite;
+    transition: all 0.3 ease-in-out;
 }
 
 @keyframes moveSpline6 {
     0% {
-        bottom: 28rem;
+        transform: rotate(0deg);
     }
     25% {
-        bottom: 28.1rem;
-        transform: rotate(2.5deg);
+        transform: rotate(1.5deg);
     }
     50% {
-        bottom: 28.2rem;
-        transform: rotate(5deg);
+        transform: rotate(3deg);
     }
     75% {
-        bottom: 28.1rem;
-        transform: rotate(2.5deg);
+        transform: rotate(1.5deg);
     }
     100% {
-        bottom: 28rem;
+        transform: rotate(0deg);
     }
 }
 
+/* hexagon animation  */
+
 .spline-7 {
     position: absolute;
-    left: 112rem;
-    scale: 0.8;
-    bottom: 0rem;
+    left: 65.5vw;
+    scale: 0.5;
+    height: 100%;
+    width: 100%;
+    bottom: 40vh;
     opacity: 0.3;
-    animation: moveSpline7 2s infinite;
-    transition: 0.3 ease-in-out;
+    animation: moveSpline7 3s infinite;
+    transition: all 0.3s ease-in-out;
 }
 
 @keyframes moveSpline7 {
     0% {
-        bottom: 0rem;
+        bottom: 40vh;
     }
     25% {
-        bottom: 0.1rem;
+        bottom: 40.1vh;
     }
     50% {
-        bottom: 0.15rem;
+        bottom: 40.2vh;
     }
     75% {
-        bottom: 0.1rem;
+        bottom: 40.1vh;
     }
     100% {
-        bottom: 0rem;
+        bottom: 40vh;
     }
 }
 
+/* orb animation  */
 .spline-8 {
     position: absolute;
-    left: 100rem;
-    scale: 0.4;
-    bottom: 18rem;
-    opacity: 0.8;
+    left: 61.5vw;
+    scale: 0.5;
+    width: 100%;
+    height: 100%;
+    bottom: 57.5vh;
+    opacity: 0.7;
     animation: moveSpline8 2s infinite;
-    transition: 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 @keyframes moveSpline8 {
     0% {
-        bottom: 18rem;
+        bottom: 57.5vh;
     }
     25% {
-        bottom: 18.25rem;
+        bottom: 57.75vh;
     }
     50% {
-        bottom: 18.5rem;
+        bottom: 58vh;
     }
     75% {
-        bottom: 18.25rem;
+        bottom: 57.75vh;
     }
     100% {
-        bottom: 18rem;
+        bottom: 57.5vh;
     }
 }
 

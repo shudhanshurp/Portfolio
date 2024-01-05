@@ -16,26 +16,33 @@ const HomePage = () => {
                 <div className="backgroundSpline">
                     <div className="spline-3">
                         <img src={spline3} alt="" />
+                        {/* planet with black moon image */}
                     </div>
                     <div className="spline-4">
                         <img src={spline4} alt="" />
+                        {/* spike planet image */}
                     </div>
                     <div className="spline-5">
                         <img src={spline5} alt="" />
+                        {/* saturn image */}
                     </div>
                     <div className="spline-6">
                         <img src={spline6} alt="" />
+                        {/* triangle image */}
                     </div>
                     <div className="spline-7">
                         <img src={spline7} alt="" />
+                        {/* hexagon image */}
                     </div>
                     <div className="spline-8">
                         <img src={spline8} alt="" />
+                        {/* orb image */}
                     </div>
                 </div>
 
                 <div className="spline-2">
                     <img src={spline2} alt="" />
+                    {/* astro img */}
                 </div>
                 <div className="spline-1">
                     <Spline scene="https://prod.spline.design/TwoImwLoAD2NLzwU/scene.splinecode" />

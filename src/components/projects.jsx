@@ -10,6 +10,7 @@ import mute from "../assets/mute3D.webp";
 import ecom from "../assets/dashboard3D.png";
 import object from "../assets/ml3D.png";
 import emply from "../assets/management3D.png";
+import plus from "../assets/plus.webp";
 
 const projects = [
     {
@@ -129,6 +130,29 @@ const projects = [
         imgClass: "Employ",
         github: "https://github.com/shudhanshurp/Employee-Management-System",
     },
+    {
+        id: 6,
+        title: "Check out more...",
+        // skills: ["PHP", "JavaScript", "CSS", "MySQL"],
+        color: "neon",
+        // desc: 'The "Employee Management System" project is a full-stack web application designed for managing employee records. It uses basic HTML, CSS, and JavaScript for front-end development, with PHP as the backend language and MySQL for the database. The application offers functionalities such as employee registration, profile management, and managing company activities like leave approval, etc. The system runs on an Apache server using XAMPP, and the database is managed with phpMyAdmin. It implements core web programming concepts like sessions for tracking user login state, GET and POST methods for handling user input, regular expressions for input validation, SQL queries for database interaction, and JavaScript for event handling. The system consists of several tables including employee, admin, and personal information, which work together to facilitate the functionality of the web application',
+        // keywords: [
+        //     "HTML, CSS, JavaScript, Web development, PHP, MySQL, XAMPP, MySQL",
+        // ],
+        keywords: [
+            // "HTML",
+            // "CSS",
+            // "JavaScript",
+            // "Web development",
+            // "PHP",
+            // "MySQL",
+            // "XAMPP",
+            // "MySQL",
+        ],
+        image: plus,
+        imgClass: "plus",
+        github: "https://github.com/shudhanshurp/",
+    },
 ];
 
 const ProjectBox = ({
@@ -139,12 +163,13 @@ const ProjectBox = ({
     keywords,
     image,
     imgClass,
+    github,
     onSelectProject,
 }) => (
     <div
         className={`projectBox ${color}`}
         onClick={() =>
-            onSelectProject({ title, desc, keywords, image, imgClass })
+            onSelectProject({ title, desc, keywords, image, imgClass, github })
         }
     >
         <div className="projectInfo">
@@ -156,11 +181,12 @@ const ProjectBox = ({
                     </span>
                 ))}
             </div>
-            <a className="github-btn">
+            <a className="github-btn" href={github}>
                 {" "}
                 <SiGithub className="socialIconItem " />
             </a>
         </div>
+
         <div className="imageDiv">
             <img src={image} alt="error" className={`${imgClass}`} />
         </div>

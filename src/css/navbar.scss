@@ -8,14 +8,14 @@
     position: sticky !important;
     top: 0;
     left: 0;
-    font-size: 1.15rem;
+    font-size: 1rem;
     height: 10vh;
     z-index: 1000 !important;
 
     .leftLogo {
         .logo {
             filter: invert(1);
-            width: 15vw;
+            width: 14vw;
             margin: 0.75rem 0;
         }
     }
@@ -45,7 +45,7 @@
 
             text-decoration: none;
 
-            font-size: 0.875em;
+            font-size: 1rem;
 
             .interests:hover {
                 color: rgb(137, 205, 254);
