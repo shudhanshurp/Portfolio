@@ -89,7 +89,7 @@ const Navbar = () => {
                         style={{ animationDelay: "300ms" }}
                     >
                         <a
-                            href="https://drive.google.com/file/d/1S2iv-YkieKr-SyqckDzozV9jQukujh5v/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1gZweTRYMIL-LZpS9QASZ0FclUI0-qiLA/view?usp=sharing"
                             onClick={handleContactClick}
                         >
                             <span className="resume" href="/">
@@ -99,9 +99,6 @@ const Navbar = () => {
                     </li>
                 </ul>
             </div>
-            <button className="toggleBtn animate__animated animate__fadeInDown">
-                <img className="pyramid" src="./pyramid.png" alt="" />
-            </button>
         </div>
     );
 };
