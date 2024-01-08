@@ -22,24 +22,48 @@ const ContactSection = () => {
                 </div>
             </div>
             <div className="socialContainer">
-                <div className="socialIcon github">
+                <a
+                    className="socialIcon github"
+                    href="https://github.com/shudhanshurp"
+                    target="_blank_"
+                >
                     <SiGithub className="socialIconItem " />
-                </div>
-                <div className="socialIcon instagram">
+                </a>
+                <a
+                    className="socialIcon instagram"
+                    href="https://www.instagram.com/shudhanshurp/"
+                    target="_blank_"
+                >
                     <SiInstagram className="socialIconItem " />
-                </div>
-                <div className="socialIcon linkedin">
+                </a>
+                <a
+                    className="socialIcon linkedin"
+                    href="https://www.linkedin.com/in/shudhanshurp/"
+                    target="_blank_"
+                >
                     <SiLinkedin className="socialIconItem " />
-                </div>
-                <div className="socialIcon twitter">
+                </a>
+                <a
+                    className="socialIcon twitter"
+                    href="https://twitter.com/shudhanshurp"
+                    target="_blank_"
+                >
                     <SiTwitter className="socialIconItem " />
-                </div>
-                <div className="socialIcon leetcode">
+                </a>
+                <a
+                    className="socialIcon leetcode"
+                    href="https://leetcode.com/shudhanshurp/"
+                    target="_blank_"
+                >
                     <SiLeetcode className="socialIconItem " />
-                </div>
-                <div className="socialIcon hackerrank">
+                </a>
+                <a
+                    className="socialIcon hackerrank"
+                    href="https://www.hackerrank.com/profile/shudhanshurp"
+                    target="_blank_"
+                >
                     <SiHackerrank className="socialIconItem " />
-                </div>
+                </a>
             </div>
             <div className="sendEmail">
                 <div className="someEmailIntro">

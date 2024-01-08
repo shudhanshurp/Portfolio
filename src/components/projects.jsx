@@ -181,7 +181,7 @@ const ProjectBox = ({
                     </span>
                 ))}
             </div>
-            <a className="github-btn" href={github}>
+            <a className="github-btn" href={github} target="_blank_">
                 {" "}
                 <SiGithub className="socialIconItem " />
             </a>

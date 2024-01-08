@@ -1,6 +1,5 @@
 #root {
     font-family: "Inter", sans-serif;
-
     width: 100vw;
 }
 
@@ -186,8 +185,8 @@
 /* global colors or color palettes */
 
 .pink {
-    background: rgb(254, 137, 205);
-    background-color: #0f1035;
+    background: rgb(137, 137, 254);
+    /* background-color: #00c3ff; */
     transition: all 0.5s ease-in-out;
 }
 

@@ -8,8 +8,7 @@
     .scContainer {
         display: flex;
         flex-direction: column;
-        width: 99vw;
-        overflow: hidden;
+        width: 100%;
 
         .titleContainer {
             // background-color: rgba(0, 255, 255, 0.157);
@@ -53,6 +52,10 @@
 
         .skillContainer {
             height: 80vh;
+            width: 92rem;
+            overflow: hidden;
+
+            margin: 0 auto;
             padding: 2vh 0;
             .hex-layer-6 {
                 overflow: hidden;

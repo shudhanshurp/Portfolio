@@ -84,14 +84,8 @@ const Navbar = () => {
                             </span>
                         </a>
                     </li>
-                    <li
-                        className="animate__animated animate__fadeInDown"
-                        style={{ animationDelay: "300ms" }}
-                    >
-                        <a
-                            href="https://drive.google.com/file/d/1gZweTRYMIL-LZpS9QASZ0FclUI0-qiLA/view?usp=sharing"
-                            onClick={handleContactClick}
-                        >
+                    <li className="animate__animated animate__fadeInDown">
+                        <a href="https://drive.google.com/file/d/1gZweTRYMIL-LZpS9QASZ0FclUI0-qiLA/view?usp=sharing">
                             <span className="resume" href="/">
                                 Resume
                             </span>
