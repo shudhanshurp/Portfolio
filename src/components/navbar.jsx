@@ -1,6 +1,7 @@
 // import React from "react";
 import "../css/navbar.scss";
 import logo from "../assets/signature.png";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
     const handleProjectsClick = () => {
@@ -38,9 +39,16 @@ const Navbar = () => {
                 id="logo"
                 onClick={handlelogoCLick}
             >
-                <a href="#top" className="leftLogo">
-                    <img src={logo} alt="" className="logo" />
-                </a>
+                <ScrollLink
+                    to="homepage"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                >
+                    <a href="#top" className="leftLogo">
+                        <img src={logo} alt="" className="logo" />
+                    </a>
+                </ScrollLink>
             </div>
             <div className="rightNav">
                 <ul>
@@ -48,41 +56,72 @@ const Navbar = () => {
                         className="animate__animated animate__fadeInDown"
                         style={{ animationDelay: "50ms" }}
                     >
-                        <a href="#project" onClick={handleProjectsClick}>
-                            <span className="projects" href="/">
-                                Projects
-                            </span>
-                        </a>
+                        <ScrollLink
+                            to="project"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            <a href="#project" onClick={handleProjectsClick}>
+                                <span className="projects" href="/">
+                                    Projects
+                                </span>
+                            </a>
+                        </ScrollLink>
                     </li>
                     <li
                         className="animate__animated animate__fadeInDown"
                         style={{ animationDelay: "100ms" }}
                     >
-                        <a href="#skills" onClick={handleSkillsClick}>
-                            <span className="skills" href="/">
-                                Skills
-                            </span>
-                        </a>
+                        <ScrollLink
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            <a href="#skills" onClick={handleSkillsClick}>
+                                <span className="skills" href="/">
+                                    Skills
+                                </span>
+                            </a>
+                        </ScrollLink>
                     </li>
                     <li
                         className="animate__animated animate__fadeInDown"
                         style={{ animationDelay: "150ms" }}
                     >
-                        <a href="#background" onClick={handleEducationSection}>
-                            <span className="background" href="/">
-                                Background
-                            </span>
-                        </a>
+                        <ScrollLink
+                            to="background"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            <a
+                                href="#background"
+                                onClick={handleEducationSection}
+                            >
+                                <span className="background" href="/">
+                                    Background
+                                </span>
+                            </a>
+                        </ScrollLink>
                     </li>
                     <li
                         className="animate__animated animate__fadeInDown"
                         style={{ animationDelay: "250ms" }}
                     >
-                        <a href="#contact" onClick={handleContactClick}>
-                            <span className="contact" href="/">
-                                Contact
-                            </span>
-                        </a>
+                        <ScrollLink
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                        >
+                            <a href="#contact" onClick={handleContactClick}>
+                                <span className="contact" href="/">
+                                    Contact
+                                </span>
+                            </a>
+                        </ScrollLink>
                     </li>
                     <li className="animate__animated animate__fadeInDown">
                         <a href="https://drive.google.com/file/d/1gZweTRYMIL-LZpS9QASZ0FclUI0-qiLA/view?usp=sharing">

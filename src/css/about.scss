@@ -10,6 +10,7 @@
 
     .leftSideAboutContainer {
         width: 60%;
+        z-index: 5;
 
         .aboutSubHeading1 {
             font-size: 1.5rem;
@@ -35,6 +36,7 @@
         .other-details {
             font-size: 1rem;
             padding-top: 1rem;
+            font-weight: 400;
         }
     }
 }

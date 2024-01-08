@@ -10,7 +10,7 @@ import spline2 from "../assets/astro.png";
 
 const HomePage = () => {
     return (
-        <div className="homepageContainer">
+        <div className="homepageContainer" id="homepage" name="homepage">
             <AboutMeSection />
             <div className="spline-Animation">
                 <div className="backgroundSpline">
